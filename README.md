@@ -19,3 +19,17 @@ forever-service install -s index.js node-server
 # Start the service
 service node-server start
 ```
+
+## Check the status of te APP
+
+### From a terminal
+```shell
+# Get the status
+forever list
+
+# tail the logs
+tail -f /var/log/node-server.log
+```
+
+### From a web browser
+go to ```http://<ip>:3000/```, Hello world should be displayed.
